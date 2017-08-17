@@ -1,0 +1,44 @@
+body{
+	background-image: url("../images/background2.jpg");
+	background-repeat: repeat;
+	background-size: 450px;
+}
+
+.container{
+	background-color: black;
+	height: 700px;
+	width: 1180px;
+    margin-top: 200px;
+}
+
+.btn{
+	color: #f0f4f5;
+    background-color: #b15b0f;
+    margin-top: 60px;
+    margin-left: 300px;
+    font-size: 30px;
+
+}
+
+h1{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+.timer{
+	color: red;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 25px;
+}
+
+#question1{
+     color: white;
+     text-align: center;
+     height: 900px;
+     font-size: 30px;
+     padding-top: 30px;
+
+}
+
