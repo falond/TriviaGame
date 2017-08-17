@@ -45,7 +45,7 @@ var gameQuestions = [
 
 	// Start timer 
 	
-		var number = 30;
+		var number = 60;
 		var intervalId;
 
 		function run(){
@@ -98,7 +98,7 @@ var gameQuestions = [
 
         function checkAnswers (){
 
-          
+
         }
 
          
