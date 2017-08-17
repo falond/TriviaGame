@@ -6,7 +6,7 @@ body{
 
 .container{
 	background-color: black;
-	height: 700px;
+	height: 780px;
 	width: 1180px;
     margin-top: 200px;
 }
@@ -37,8 +37,7 @@ h1{
      color: white;
      text-align: center;
      height: 900px;
-     font-size: 30px;
+     font-size: 25px;
      padding-top: 30px;
 
 }
-
