@@ -15,7 +15,7 @@ body{
 	color: #f0f4f5;
     background-color: #b15b0f;
     margin-top: 60px;
-    margin-left: 300px;
+    margin-left: 500px;
     font-size: 30px;
 
 }
@@ -41,3 +41,9 @@ h1{
      padding-top: 30px;
 
 }
+button{
+	color: white;
+	background-color: #b15b0f;
+	font-size: 20px;
+}
+
