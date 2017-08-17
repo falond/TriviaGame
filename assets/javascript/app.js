@@ -1,4 +1,4 @@
- $(document).ready(function() {
+$(document).ready(function() {
 
 // Global Varibles
 var correctAnswers = 0;
@@ -41,7 +41,6 @@ var gameQuestions = [
 
 	// Start the game & play music 
 	$("#startGame").on("click", run);
-        audio.play();
 
 
 	// Start timer 
@@ -52,8 +51,8 @@ var gameQuestions = [
 		function run(){
 	     intervalId = setInterval(decrement, 1000);
 	     $("#startGame").hide();
-	     displayQuestions();
-             audio.play();
+	     displayQuestionsAndAnswers();
+       // audio.play();
 		}
 
 		 //  The decrement function.
@@ -79,27 +78,39 @@ var gameQuestions = [
       	clearInterval(intervalId);
     };
 
-         // Get all questions to show with answers choices
-		    function displayQuestions(){
-		
-          for (var i = 0; i < gameQuestions.length; i++) {
-          
-            $("#question1").append("<p>" + gameQuestions[i].question + "</p>" + "<p>" + gameQuestions[i].answers + "</p>");
-            console.log(gameQuestions[i].question);
-    }
 
+
+          // Get all questions to show with answers choices
+ 		     function displayQuestionsAndAnswers(){
+               for (var i = 0; i < gameQuestions.length; i++) {
+                var buttons1 = $("<button>" + gameQuestions[i].answers[0] + "</button>");
+                var buttons2 = $("<button>" + gameQuestions[i].answers[1] + "</button>");
+                var buttons3 = $("<button>" + gameQuestions[i].answers[2] + "</button>");
+                var buttons4 = $("<button>" + gameQuestions[i].answers[3] + "</button>");
+                var getQuestions = $("<div/>",{"text":gameQuestions[i].question});
+
+             $("#question1").append(getQuestions).append(buttons1).append(buttons2).append(buttons3).append(buttons4);
+             
+      
+
+ }
 }
 
+        function checkAnswers (){
+
+          
+        }
+
+         
+
 
     
+
+
+
+
+
+
+
 
 });
-
-    
-
-
-
-
-
-
-
