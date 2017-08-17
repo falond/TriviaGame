@@ -53,6 +53,7 @@ var gameQuestions = [
 	     intervalId = setInterval(decrement, 1000);
 	     $("#startGame").hide();
 	     displayQuestions();
+             audio.play();
 		}
 
 		 //  The decrement function.
