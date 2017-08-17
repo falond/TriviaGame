@@ -13,7 +13,7 @@ var audio = new Audio("assets/audio/gamesong.mp3");
 var gameQuestions = [
     {
         question: "What is the name of Jon Snow's Direwolf?",
-        choices: ['Grey Wind','Graham','Ghost','Gargamel'],
+        answers: ['Grey Wind','Graham','Ghost','Gargamel'],
         correctAnswer: 2
         },
   
@@ -55,7 +55,6 @@ var gameQuestions = [
 	     intervalId = setInterval(decrement, 1000);
 	     $("#startGame").hide();
 	     displayQuestions();
-       displayChoices();
 		}
 
 		 //  The decrement function.
@@ -81,50 +80,21 @@ var gameQuestions = [
       	clearInterval(intervalId);
     };
 
-         // Get all questions to show
+         // Get all questions to show with answers choices
 		    function displayQuestions(){
 		
           for (var i = 0; i < gameQuestions.length; i++) {
           
-            $("#question1").append("<p>" + gameQuestions[i].question + "</p>");
+            $("#question1").append("<p>" + gameQuestions[i].question + "</p>" + "<p>" + gameQuestions[i].answers + "</p>");
             console.log(gameQuestions[i].question);
     }
 
-}
-         // Get all answers to show
-        function displayChoices(){
-          for (var i = 0; i < gameQuestions.length; i++) {
-          
-            // $("#question1").append("<p>" + gameQuestions[i].choices + "</p>");
-            // console.log(gameQuestions[i].choices);
-
-            $( "<p>" + gameQuestions[i].choices + "</p>" ).appendTo( $( "#question1") );
-            console.log(gameQuestions[i].choices);
-
-    }
 }
 
 
     
 
 });
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     
 
