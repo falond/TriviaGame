@@ -41,9 +41,7 @@ var gameQuestions = [
 
 	// Start the game & play music 
 	$("#startGame").on("click", run);
-
-
-		  // audio.play();
+        audio.play();
 
 
 	// Start timer 
